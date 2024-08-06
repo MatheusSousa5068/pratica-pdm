@@ -47,33 +47,33 @@ fun MainScreen() {
             TopAppBar(
                 title = { Text("Jetpack Compose") },
                 navigationIcon = {
-                    IconButton(onClick = { /* Handle menu click */ }) {
+                    IconButton(onClick = {}) {
                         Icon(Icons.Filled.Menu, contentDescription = "Menu", tint = Color.White)
                     }
                 },
                 actions = {
-                    IconButton(onClick = { /* Handle search click */ }) {
+                    IconButton(onClick = {}) {
                         Icon(Icons.Filled.Search, contentDescription = "Search", tint = Color.White)
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color(0xFF6200EE), // Cor roxa mais intensa
+                    containerColor = Color(0xFF6200EE),
                     titleContentColor = Color.White
                 )
             )
         },
         bottomBar = {
             BottomAppBar(
-                containerColor = Color(0xFF6200EE) // Cor roxa mais intensa
+                containerColor = Color(0xFF6200EE)
             ) {
                 Row(
                     modifier = Modifier.fillMaxSize(),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.SpaceAround
                 ) {
-                    BottomNavigationItem(icon = Icons.Filled.Home, label = "Home", onClick = { /* Handle home click */ })
-                    BottomNavigationItem(icon = Icons.Filled.Add, label = "Create", onClick = { /* Handle create click */ })
-                    BottomNavigationItem(icon = Icons.Filled.Settings, label = "Settings", onClick = { /* Handle settings click */ })
+                    BottomNavigationItem(icon = Icons.Filled.Home, label = "Home", onClick = { })
+                    BottomNavigationItem(icon = Icons.Filled.Add, label = "Create", onClick = { })
+                    BottomNavigationItem(icon = Icons.Filled.Settings, label = "Settings", onClick = { })
                 }
             }
         },
